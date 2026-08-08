@@ -63,3 +63,24 @@ Results appear in `output/books.json` and `output/run-report.json`.
 ## Ethics note
 
 Use an official API when one exists. Never bypass logins, paywalls, or blocks. Collect only what you need. Respect robots.txt. Always identify yourself with an honest user-agent.
+
+## Sample run report
+
+```json
+{
+  "start_time": "2026-08-08T17:17:56.666Z",
+  "end_time": "2026-08-08T17:17:56.994Z",
+  "duration_seconds": "0.33",
+  "catalogue_pages": 3,
+  "urls_discovered": 60,
+  "cache_hits": 60,
+  "pages_fetched": 0,
+  "valid_records": 60,
+  "invalid_records": 0,
+  "failed_pages": 0
+}
+```
+
+## Why no browser was needed
+
+The data is already in the HTML the server sends — no JavaScript rendering is needed. A browser would add memory overhead and startup time for no benefit. A plain HTTP request is faster, lighter, and simpler.
