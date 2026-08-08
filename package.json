@@ -1,0 +1,25 @@
+{
+  "name": "polite-scraper",
+  "version": "1.0.0",
+  "description": "A polite web scraper for Books to Scrape — fetch, extract, validate, report",
+  "main": "index.js",
+  "scripts": {
+  "start": "node src/index.js"
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vedadramic/polite-scraper.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vedadramic/polite-scraper/issues"
+  },
+  "homepage": "https://github.com/vedadramic/polite-scraper#readme",
+  "dependencies": {
+    "cheerio": "^1.2.0",
+    "node-fetch": "^3.3.2",
+    "zod": "^4.4.3"
+  }
+}
