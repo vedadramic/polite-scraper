@@ -1,10 +1,7 @@
-const { fetchPage } = require('./fetcher');
-
-const BASE_URL = 'https://books.toscrape.com/catalogue/page-1.html';
+const { discoverBookUrls } = require('./crawler');
 
 async function main() {
-  const { html } = await fetchPage(BASE_URL);
-  console.log(`Page size: ${html.length} bytes`);
+  const { uniqueUrls, cataloguePages } = await discoverBookUrls();
 }
 
 main().catch(console.error);
