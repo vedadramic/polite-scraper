@@ -36,7 +36,6 @@ async function discoverBookUrls() {
   console.log(`catalogue_pages=${pageCount}`);
   console.log(`discovered=${uniqueUrls.length}`);
   console.log(`unique_urls=${uniqueUrls.length}`);
-
   return { uniqueUrls, cataloguePages };
 }
 
